@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('pages.homes.index');
 });
+
+Route::get('/registrasi', 'GeneralController@registration')->name('pages/registration');
+

@@ -45,8 +45,8 @@
   }
 }
 // bible verse
-#home-section-2 {
-  padding: 100px 0;
+#bible-verse-section {
+  padding: 100px 0 40px 0;
   .bible-verse-container {
     @include grid(400px calc(100% - 400px));
     width: 650px;
@@ -116,20 +116,27 @@
   }
 }
 // speakers
-#home-section-3 {
+#home-section-2 {
   ul {
     padding: 0
   }
+  .speakers-container {
+    padding-top: 90px;
+    padding-bottom: 180px;
+    margin-bottom: -120px;
+    position: relative;
+  }
   .guest-section {
     .swc-section-title {
-      font-size: 36px;
+      font-size: 32px;
+      margin-bottom: 20px;
     }
   }
   .swc-section-title {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     width: 100%;
-    font-size: 60px;
+    font-size: 45px;
     display: block;
     letter-spacing: 8px;
   }
@@ -137,7 +144,7 @@
     padding: 30px 0;
     ul {
       @include grid(1fr 1fr, 1fr 1fr);
-      grid-gap: 20px;
+      grid-gap: 0;
     }
   }
   .speaker {
@@ -169,9 +176,22 @@
     }
   }
   .workshop-container {
-    h2 {
-      color: $color--dark-1;
-      font-size: 36px;
+    position: relative;
+    z-index: 5;
+    .workshop-title-container {
+      margin-bottom: 45px;
+      position: relative;
+      h2 {
+        color: $color--dark-1;
+        font-size: 36px;
+        position: relative;
+        z-index: 3;
+      }
+      #section-2-bg-asset2 {
+        width: 170px;
+        right: 20px;
+        top: -10px;
+      }
     }
     .workshops {
       padding: 0;
@@ -200,6 +220,98 @@
     }
     .rundown-button {
       margin-top: 30px;
+    }
+  }
+  .video-promotion {
+    z-index: 4;
+    padding: 180px 0;
+    margin-top: -90px;
+    position: relative;
+    .video-container {
+      img {
+        width: 100%;
+        height: auto;
+      }
+      margin-bottom: 30px;
+    }
+  }
+  .registration-price {
+    margin-top: -120px;
+    .swc-section-title {
+      color: $color--dark-1;
+      font-size: 40px;
+      font-family: 'Keep Calm';
+      letter-spacing: 12px;
+    }
+    #section-2-asset4 {
+      position: relative;
+      padding: 15px 0 0 0;
+      @include flexbox();
+      width: 110px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    ul {
+      .price-type {
+        margin: 30px 0;
+        @include flexbox(center, center, column);
+        .price-title {
+          font-size: 20px;
+          color: $color--pink;
+          margin-bottom: 10px;
+          font-family: 'Keep Calm';
+          text-align: center;
+          letter-spacing: 4px;
+        }
+        span:not(.price-title) {
+          text-align: center;
+          font-size: 18px;
+          letter-spacing: 3px;
+          margin-bottom: 6px;
+          font-family: 'Keep Calm';
+        }
+      }
+    }
+  }
+}
+// social media
+#home-section-3 {
+  .connect-container {
+    padding: 110px 0px 150px 0;
+    position: relative;
+    .swc-section-title {
+      color: $color--dark-1;
+      margin-bottom: 30px;
+      font-size: 36px;
+    }
+    .social-media {
+      padding: 0;
+      margin: 0;
+      .socmed {
+        list-style: none;
+        margin-bottom: 30px;
+        @include flexbox(center, center, column);
+        .socmed-logo {
+          width: 80px;
+          margin: 15px 0;
+          @include flexbox()
+        }
+        .socmed-name, .contact-us {
+          span {
+            letter-spacing: 3px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: 'Keep Calm';
+            margin: 5px 0;
+            display: block;
+            position: relative;
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }

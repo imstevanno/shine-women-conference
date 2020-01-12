@@ -14,6 +14,7 @@
       @yield('body')
     </v-app>
   </div>
+  @include('layout.footer')
   @include('layout.scripts')
 </body>
 </html>

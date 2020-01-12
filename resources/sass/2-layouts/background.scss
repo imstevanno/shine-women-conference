@@ -1,4 +1,4 @@
-.section-bg-small {
+.section-bg-small, .section-bg-asset {
   position: absolute;
   z-index: 1;
 
@@ -25,3 +25,61 @@
   bottom: -240px;
 }
 
+#home-section-2 {
+  .speakers-container {
+    background-image: url('/images/section2-bg-big1.png');
+    background-position: center -60px;
+    background-size: cover;
+  }
+  .video-promotion {
+    background-image: url('/images/section2-bg-big2.png');
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+#section-2-bg-small1 {
+  width: 1000px;
+  left: -480px;
+  bottom: 90px;
+}
+#section-2-bg-asset1 {
+  right: 200px;
+  top: 420px;
+  width: 110px;
+}
+#section-2-bg-small2 {
+  width: 1000px;
+  right: -470px;
+}
+#section-2-bg-asset3 {
+  width: 210px;
+  left: 200px;
+  top: 150px;
+}
+#section-2-bg-small3 {
+  width: 710px;
+  left: -120px;
+  top: -10px;
+}
+#section-2-bg-asset5{
+  width: 290px;
+  right: 130px;
+  top: 0;
+}
+
+#home-section-3 {
+  background-image: url('/images/section3-bg-big1.png');
+  background-position: center -40px;
+  background-size: cover; 
+}
+#section-3-bg-asset1 {
+  right: 290px;
+  top: 40px;
+  width: 120px;
+}
+#section-3-bg-asset2 {
+  width: 250px;
+  left: 380px;
+  bottom: 150px;
+}

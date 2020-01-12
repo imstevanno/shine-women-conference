@@ -11381,6 +11381,7 @@ body {
   letter-spacing: 3px;
   color: #FB8787;
   margin-bottom: 10px;
+  font-family: "Keep Calm";
 }
 
 .swc-section-container {
@@ -11487,12 +11488,14 @@ body {
   right: 0;
 }
 
-.section-bg-small {
+.section-bg-small,
+.section-bg-asset {
   position: absolute;
   z-index: 1;
 }
 
-.section-bg-small img {
+.section-bg-small img,
+.section-bg-asset img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -11515,6 +11518,128 @@ body {
   width: 890px;
   left: -330px;
   bottom: -240px;
+}
+
+#home-section-2 .speakers-container {
+  background-image: url("/images/section2-bg-big1.png");
+  background-position: center -60px;
+  background-size: cover;
+}
+
+#home-section-2 .video-promotion {
+  background-image: url("/images/section2-bg-big2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#section-2-bg-small1 {
+  width: 1000px;
+  left: -480px;
+  bottom: 90px;
+}
+
+#section-2-bg-asset1 {
+  right: 200px;
+  top: 420px;
+  width: 110px;
+}
+
+#section-2-bg-small2 {
+  width: 1000px;
+  right: -470px;
+}
+
+#section-2-bg-asset3 {
+  width: 210px;
+  left: 200px;
+  top: 150px;
+}
+
+#section-2-bg-small3 {
+  width: 710px;
+  left: -120px;
+  top: -10px;
+}
+
+#section-2-bg-asset5 {
+  width: 290px;
+  right: 130px;
+  top: 0;
+}
+
+#home-section-3 {
+  background-image: url("/images/section3-bg-big1.png");
+  background-position: center -40px;
+  background-size: cover;
+}
+
+#section-3-bg-asset1 {
+  right: 290px;
+  top: 40px;
+  width: 120px;
+}
+
+#section-3-bg-asset2 {
+  width: 250px;
+  left: 380px;
+  bottom: 150px;
+}
+
+footer {
+  margin-top: -120px;
+}
+
+#footer {
+  padding: 60px 0;
+  position: relative;
+  z-index: 5;
+  background-color: white;
+  margin-top: -30px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+#footer h3 {
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+#footer ul {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+#footer ul .support {
+  list-style: none;
+  margin: 0 15px;
+}
+
+#footer ul .support img {
+  width: 150px;
+}
+
+#footer ul .support span {
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: 700;
 }
 
 #home-section-1 {
@@ -11587,11 +11712,11 @@ body {
   position: relative;
 }
 
-#home-section-2 {
-  padding: 100px 0;
+#bible-verse-section {
+  padding: 100px 0 40px 0;
 }
 
-#home-section-2 .bible-verse-container {
+#bible-verse-section .bible-verse-container {
   display: grid;
   grid-template-columns: 400px calc(100% - 400px);
   grid-template-rows: 1fr;
@@ -11599,37 +11724,37 @@ body {
   z-index: 1;
 }
 
-#home-section-2 .bible-verse-container .bible-verse-image {
+#bible-verse-section .bible-verse-container .bible-verse-image {
   width: 100%;
   position: relative;
 }
 
-#home-section-2 .bible-verse-container .bible-verse-image > img {
+#bible-verse-section .bible-verse-container .bible-verse-image > img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-#home-section-2 .bible-verse-container .bible-verse-image .bible-verse-asset {
+#bible-verse-section .bible-verse-container .bible-verse-image .bible-verse-asset {
   width: 80px;
   position: absolute;
 }
 
-#home-section-2 .bible-verse-container .bible-verse-image .bible-verse-asset#bible-verse-asset1 {
+#bible-verse-section .bible-verse-container .bible-verse-image .bible-verse-asset#bible-verse-asset1 {
   left: 50px;
   top: -5px;
   width: 120px;
 }
 
-#home-section-2 .bible-verse-container .bible-verse-image .bible-verse-asset#bible-verse-asset2 {
+#bible-verse-section .bible-verse-container .bible-verse-image .bible-verse-asset#bible-verse-asset2 {
   right: 70px;
   bottom: 0px;
   width: 80px;
   z-index: 3;
 }
 
-#home-section-2 .bible-verse-container .bible-verse-image .bible-verse-asset#bible-verse-asset3 {
+#bible-verse-section .bible-verse-container .bible-verse-image .bible-verse-asset#bible-verse-asset3 {
   right: -70px;
   bottom: -20px;
   width: 250px;
@@ -11637,14 +11762,14 @@ body {
   z-index: 2;
 }
 
-#home-section-2 .bible-verse-container .bible-verse-image .bible-verse-asset img {
+#bible-verse-section .bible-verse-container .bible-verse-image .bible-verse-asset img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#home-section-2 .bible-verse-container .bible-verse-content {
+#bible-verse-section .bible-verse-container .bible-verse-content {
   z-index: 2;
   display: -webkit-box;
   display: flex;
@@ -11657,7 +11782,7 @@ body {
           flex-direction: column;
 }
 
-#home-section-2 .bible-verse-container .bible-verse-content .verse {
+#bible-verse-section .bible-verse-container .bible-verse-content .verse {
   font-size: 18px;
   letter-spacing: 3px;
   color: #D55C7A;
@@ -11665,14 +11790,14 @@ body {
   font-family: "Keep Calm";
 }
 
-#home-section-2 .bible-verse-container .bible-verse-content .version {
+#bible-verse-section .bible-verse-container .bible-verse-content .version {
   font-size: 16px;
   letter-spacing: 3px;
   margin-bottom: 15px;
   font-weight: 700;
 }
 
-#home-section-2 .bible-verse-container .bible-verse-content p {
+#bible-verse-section .bible-verse-container .bible-verse-content p {
   font-size: 12px;
   word-spacing: 2px;
   width: 250px;
@@ -11682,41 +11807,49 @@ body {
   color: #444345;
 }
 
-#home-section-3 ul {
+#home-section-2 ul {
   padding: 0;
 }
 
-#home-section-3 .guest-section .swc-section-title {
-  font-size: 36px;
+#home-section-2 .speakers-container {
+  padding-top: 90px;
+  padding-bottom: 180px;
+  margin-bottom: -120px;
+  position: relative;
 }
 
-#home-section-3 .swc-section-title {
+#home-section-2 .guest-section .swc-section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#home-section-2 .swc-section-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 0;
   width: 100%;
-  font-size: 60px;
+  font-size: 45px;
   display: block;
   letter-spacing: 8px;
 }
 
-#home-section-3 .speakers {
+#home-section-2 .speakers {
   padding: 30px 0;
 }
 
-#home-section-3 .speakers ul {
+#home-section-2 .speakers ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 0;
 }
 
-#home-section-3 .speaker {
+#home-section-2 .speaker {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#home-section-3 .speaker .speaker-profile-picture {
+#home-section-2 .speaker .speaker-profile-picture {
   width: 100%;
   position: relative;
   display: -webkit-box;
@@ -11730,7 +11863,7 @@ body {
           flex-direction: column;
 }
 
-#home-section-3 .speaker .speaker-profile-picture .profile-picture {
+#home-section-2 .speaker .speaker-profile-picture .profile-picture {
   width: 170px;
   height: 170px;
   border-radius: 100%;
@@ -11746,31 +11879,49 @@ body {
           flex-direction: row;
 }
 
-#home-section-3 .speaker .speaker-profile-picture .profile-picture img {
+#home-section-2 .speaker .speaker-profile-picture .profile-picture img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#home-section-3 .speaker .speaker-profile-picture .speaker-name {
+#home-section-2 .speaker .speaker-profile-picture .speaker-name {
   font-size: 40px;
   margin-top: 6px;
   font-family: "Beyond Infinity";
   color: #D55C7A;
 }
 
-#home-section-3 .workshop-container h2 {
-  color: #444345;
-  font-size: 36px;
+#home-section-2 .workshop-container {
+  position: relative;
+  z-index: 5;
 }
 
-#home-section-3 .workshop-container .workshops {
+#home-section-2 .workshop-container .workshop-title-container {
+  margin-bottom: 45px;
+  position: relative;
+}
+
+#home-section-2 .workshop-container .workshop-title-container h2 {
+  color: #444345;
+  font-size: 36px;
+  position: relative;
+  z-index: 3;
+}
+
+#home-section-2 .workshop-container .workshop-title-container #section-2-bg-asset2 {
+  width: 170px;
+  right: 20px;
+  top: -10px;
+}
+
+#home-section-2 .workshop-container .workshops {
   padding: 0;
   margin: 0;
 }
 
-#home-section-3 .workshop-container .workshops .workshop {
+#home-section-2 .workshop-container .workshops .workshop {
   padding: 0;
   margin-top: 15px;
   display: -webkit-box;
@@ -11784,11 +11935,11 @@ body {
           flex-direction: column;
 }
 
-#home-section-3 .workshop-container .workshops .workshop span {
+#home-section-2 .workshop-container .workshops .workshop span {
   text-align: center;
 }
 
-#home-section-3 .workshop-container .workshops .workshop span.workshop-title {
+#home-section-2 .workshop-container .workshops .workshop span.workshop-title {
   font-size: 20px;
   color: #FB8787;
   margin-bottom: 4px;
@@ -11797,19 +11948,154 @@ body {
   font-weight: 700;
 }
 
-#home-section-3 .workshop-container .workshops .workshop span.workshop-speaker {
+#home-section-2 .workshop-container .workshops .workshop span.workshop-speaker {
   color: #444345;
   font-family: "Beyond Infinity";
   font-size: 40px;
 }
 
-#home-section-3 .workshop-container .rundown-button {
+#home-section-2 .workshop-container .rundown-button {
   margin-top: 30px;
+}
+
+#home-section-2 .video-promotion {
+  z-index: 4;
+  padding: 180px 0;
+  margin-top: -90px;
+  position: relative;
+}
+
+#home-section-2 .video-promotion .video-container {
+  margin-bottom: 30px;
+}
+
+#home-section-2 .video-promotion .video-container img {
+  width: 100%;
+  height: auto;
+}
+
+#home-section-2 .registration-price {
+  margin-top: -120px;
+}
+
+#home-section-2 .registration-price .swc-section-title {
+  color: #444345;
+  font-size: 40px;
+  font-family: "Keep Calm";
+  letter-spacing: 12px;
+}
+
+#home-section-2 .registration-price #section-2-asset4 {
+  position: relative;
+  padding: 15px 0 0 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  width: 110px;
+}
+
+#home-section-2 .registration-price #section-2-asset4 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#home-section-2 .registration-price ul .price-type {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+#home-section-2 .registration-price ul .price-type .price-title {
+  font-size: 20px;
+  color: #D55C7A;
+  margin-bottom: 10px;
+  font-family: "Keep Calm";
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+#home-section-2 .registration-price ul .price-type span:not(.price-title) {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-bottom: 6px;
+  font-family: "Keep Calm";
+}
+
+#home-section-3 .connect-container {
+  padding: 110px 0px 150px 0;
+  position: relative;
+}
+
+#home-section-3 .connect-container .swc-section-title {
+  color: #444345;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+#home-section-3 .connect-container .social-media {
+  padding: 0;
+  margin: 0;
+}
+
+#home-section-3 .connect-container .social-media .socmed {
+  list-style: none;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+#home-section-3 .connect-container .social-media .socmed .socmed-logo {
+  width: 80px;
+  margin: 15px 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+#home-section-3 .connect-container .social-media .socmed .socmed-name span,
+#home-section-3 .connect-container .social-media .socmed .contact-us span {
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Keep Calm";
+  margin: 5px 0;
+  display: block;
+  position: relative;
+  text-align: center;
 }
 
 .swc-button {
   position: relative;
-  padding: 7px 30px;
+  padding: 10px 45px;
 }
 
 .swc-button span {
