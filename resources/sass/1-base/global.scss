@@ -1,0 +1,27 @@
+body {
+  font-family: 'Montserrat';
+}
+.swc-section-title {
+  letter-spacing: 3px;
+  color: $color--peach;
+  margin-bottom: 10px;
+}
+.swc-section-container {
+  position: relative;
+  .swc-section {
+    position: relative;
+    z-index: 5;
+  }
+}
+
+.beyond-infinity-bracket {
+  font-family: 'Beyond Infinity';
+  &:after {
+    font-family: 'Montserrat';
+    content: ')';
+  }
+  &:before {
+    font-family: 'Montserrat';
+    content: '('
+  }
+}

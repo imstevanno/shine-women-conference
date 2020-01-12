@@ -1,0 +1,55 @@
+#swc-nav {
+  height: 90px;
+  width: 100%;
+  padding: 50px 0;
+  position: absolute;
+  z-index: 300;
+  .nav-wrapper {
+    width: 100%;
+    @include flexbox();
+    .navigation {
+      @include flexbox();
+      .swc-logo {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+        a {
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      padding: 0;
+      li {
+        list-style: none;
+        margin: 0 20px;
+        a:not(.logo) {
+          color: $color__header--primary;
+          font-family: 'Montserrat';
+          font-size: 14px;
+          font-weight: 700;
+          position: relative;
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            height: 3px;
+            width: auto;
+            left: 0;
+            right: 100%;
+            transition: all ease-in-out .2s;
+            background-color: $color__header--primary;
+          }
+          &:hover {
+            text-decoration: none;
+            &:before {
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

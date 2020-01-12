@@ -1,0 +1,27 @@
+.section-bg-small {
+  position: absolute;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+#home-section-1 {
+  background-image: url('/images/section1-bg-big1.png');
+  background-position: center -90px;
+  background-size: cover;
+}
+#section-1-bg-small1 {
+  width: 800px;
+  right: -330px;
+  top: -80px;
+}
+
+#section-1-bg-small2 {
+  width: 890px;
+  left: -330px;
+  bottom: -240px;
+}
+

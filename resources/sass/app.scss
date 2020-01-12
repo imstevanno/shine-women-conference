@@ -1,0 +1,16 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import '~vuetify/dist/vuetify.min.css';
+
+// Variables
+@import '1-base/variables';
+@import '1-base/typography';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '1-base/mixins';
+@import '1-base/global';
+@import '2-layouts/main';
+@import '3-pages/main';
+@import '4-components/main';

@@ -1,0 +1,40 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$color__header--register: #EA326A;
+$color__header--primary: #0067AC;
+
+// gold gradient
+$color__gradient--gold-1: #997745;
+$color__gradient--gold-2: #FAC680;
+$color__gradient--gold-3: #CDA349;
+
+// color
+$color--primary: #EFF9F8;
+$color--secondary: #D3FFFB;
+$color--dark-1: #444345;
+$color--dark-2: #231F20;
+$color--peach: #FB8787;
+$color--pink: #D55C7A;
+
+// button color
+$color__button: #A8E2D8;
+$color__border--gradient: linear-gradient(90deg, $color__gradient--gold-1 0%, $color__gradient--gold-2 50%, $color__gradient--gold-3 100%);
+$color__border--solid: rgb(153,119,69);
