@@ -224,7 +224,9 @@ export default {
           showCancelButton: true
         }).then(async willSave => {
           if (willSave && willSave.value) {
-            let hash = sha1(md5('45227c5db6568ac1b68733ac8e87eb7886bfc035'))
+            let hash = sha1(md5('shine:5hin32o20'))
+            let hash2 = sha1(md5('admin:shine!@#'))
+            console.log('adas', hash, hash2)
             this.$store.dispatch('registration/SUBMIT_REGISTRATION', {
               form: this.formattedForm,
               hash

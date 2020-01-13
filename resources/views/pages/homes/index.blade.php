@@ -192,11 +192,13 @@
           <div class="container">
             <div class="row">
               <div class="col-8 offset-2 video-container">
-                <img src="http://placehold.it/1000x400" alt="">
+                <video class="shine-promo-video" controls poster="/videos/thumbnail.png">Your browser does not support the &lt;video&gt; tag.
+                  <source src="/videos/shine-promo-1.mp4" type="video/mp4" />
+                </video>
               </div>
-              <div class="col-8 offset-2 video-container">
+              {{-- <div class="col-8 offset-2 video-container">
                 <img src="http://placehold.it/1000x400" alt="">
-              </div>
+              </div> --}}
             </div>
           </div>
         </div>

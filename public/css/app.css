@@ -31428,6 +31428,12 @@ footer {
   height: auto;
 }
 
+#home-section-2 .video-promotion .video-container .shine-promo-video {
+  width: 100%;
+  height: auto;
+  border: 5px solid #FB8787;
+}
+
 #home-section-2 .registration-price {
   margin-top: -120px;
 }

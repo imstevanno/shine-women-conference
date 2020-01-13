@@ -2222,13 +2222,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           var _ref2 = _asyncToGenerator(
           /*#__PURE__*/
           _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(willSave) {
-            var hash;
+            var hash, hash2;
             return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
               while (1) {
                 switch (_context2.prev = _context2.next) {
                   case 0:
                     if (willSave && willSave.value) {
-                      hash = sha1__WEBPACK_IMPORTED_MODULE_1___default()(md5__WEBPACK_IMPORTED_MODULE_2___default()('45227c5db6568ac1b68733ac8e87eb7886bfc035'));
+                      hash = sha1__WEBPACK_IMPORTED_MODULE_1___default()(md5__WEBPACK_IMPORTED_MODULE_2___default()('shine:5hin32o20'));
+                      hash2 = sha1__WEBPACK_IMPORTED_MODULE_1___default()(md5__WEBPACK_IMPORTED_MODULE_2___default()('admin:shine!@#'));
+                      console.log('adas', hash, hash2);
 
                       _this2.$store.dispatch('registration/SUBMIT_REGISTRATION', {
                         form: _this2.formattedForm,
