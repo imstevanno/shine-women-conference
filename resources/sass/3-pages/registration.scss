@@ -1,0 +1,89 @@
+#registration {
+  padding-bottom: 200px;
+  background-image: url('/images/registration-bg.jpg');
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  .registration-header {
+    width: 100%;
+    padding: 60px 0;
+    @include flexbox();
+    .swc-logo {
+      width: 150px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .change-package {
+    background-color: $color--pink;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 30px;
+  }
+  .registration-form-container {
+    margin-top: 30px;
+    @include flexbox(center, center, column);
+    width: 100%;
+    .swc-section-title {
+      color: $color--dark-2;
+      margin-bottom: 0;
+    }
+    .early-bird {
+      letter-spacing: 3px;
+      font-size: 20px;
+      color: $color--pink
+    }
+    .choose-package {
+      @include flexbox(center, center, column);
+    }
+    .registration-form, .choose-package {
+      margin: 30px 0;
+      padding: 30px;
+      width: 600px;
+      background-color: rgba(255, 255, 255, .7);
+      * {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        &.v-messages__message {
+          font-size: 10px;
+        }
+        &.form-title {
+          color: $color--pink;
+          font-size: 20px;
+          font-weight: 700; 
+        }
+      }
+    }
+  }
+}
+.workshops {
+  margin-top: 30px;
+  .workshop {
+    .workshop-info {
+      @include flexbox(center, flex-start, column);
+      h5 {
+        color: $color--pink;
+        font-size: 16px;
+        margin-bottom: 0;;
+        font-weight: 700;
+      }
+      .speaker {
+        font-size: 12px;;
+      }
+    }
+  }
+}
+.workshop-error-message {
+  font-size: 10px;
+  color: red;
+}
+.attendances {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
